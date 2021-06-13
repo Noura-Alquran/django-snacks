@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'snacks'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,10 @@ ROOT_URLCONF = 'snacks_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # Build paths inside the project like this: BASE_DIR / 'subdir'.
+        'DIRS': [
+            BASE_DIR /'templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
